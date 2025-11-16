@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>億万長者ゲーム</title>
+</head>
+<body>
+    <!-- 答え -->
+    <div class="header">
+        <!-- <div class="img1">
+            <img src="./img/okuman.png" class="img2" alt="">
+        </div>  -->
+        <div class="title1">
+            <h1 class="title2">億万長者ゲーム</h1>
+        </div>
+    </div>
+    <div class="rule">
+        <div class="rule1">
+            <p class="rule3">【ルール説明】</p>
+            <p>・重複なしで1から43の整数を入力可能</p>
+            <p>・ルールを守らない場合、挑戦者は不利になる</p>
+            <p>・1回あたり200ゴールド、ただし掛け金と当選金額はあなた次第</p>
+        </div>
+        <div class="rule2">
+            <p class="rule3">【賞金】</p>
+            <p>・1等:6桁一致 2億ゴールド</p>
+            <p>・2等:5桁&ボーナス数字一致 1000万ゴールド</p>
+            <p>・3等:5桁一致 30万ゴールド</p>
+            <p>・4等:4桁一致 6.8万ゴールド</p>
+            <p>・5等:3桁一致 0.1万ゴールド</p>
+        </div>
+    </div>
+    <div class="input1">
+        <p>くじ数字入力ゾーン</p>
+        <input type="number" name="" id="num0" min="1" max="43" value="1">
+        <input type="number" name="" id="num1" min="1" max="43" value="2">
+        <input type="number" name="" id="num2" min="1" max="43" value="3">
+        <input type="number" name="" id="num3" min="1" max="43" value="4">
+        <input type="number" name="" id="num4" min="1" max="43" value="5">
+        <input type="number" name="" id="num5" min="1" max="43" value="6">
+        <p>くじ引きの回数 1-10000回</p>
+        <input type="number" name="" value="100" id="num6" min="1" max="100">
+        <p>掛け金と当選額 1-10000倍</p>
+        <input type="number" name="" value="10000" id="num7" min="1" max="10000">
+
+        <input type="button" id="button0" value="くじ引き" onclick="getValue0(); shuffle_check()"></button>
+        <input type="button" id="button0" value="リセット" onclick="reset()"></button>
+    </div>
+    <div>
+        <p class="kekka3">【結果発表】</p>
+        <div class="kekka">
+            <div class="kekka1">
+                <p>投資額　：<span id="answer2"></span></p>
+                <p>当選額　：<span id="answer3"></span></p>
+                <p>リターン：<span id="answer1"></span></p>
+                <p>１等賞　：<span id="answer4"></span></p>
+                <p>２等賞　：<span id="answer5"></span></p>
+                <p>３等賞　：<span id="answer6"></span></p>
+                <p>４等賞　：<span id="answer7"></span></p>
+                <p>５等賞　：<span id="answer8"></span></p>
+                <p>はずれ　：<span id="answer9"></span></p>
+            </div>
+            <div class="kekka2">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- 最終回の確認用
+    <p>くじの数字</p>
+    <p id="self0"></p>
+    <p id="self1"></p>
+    <p id="self2"></p>
+    <p id="self3"></p>
+    <p id="self4"></p>
+    <p id="self5"></p> -->
+
+    <!-- <p>当選番号記載</p>
+    <p id="view0"></p>
+    <p id="view1"></p>
+    <p id="view2"></p>
+    <p id="view3"></p>
+    <p id="view4"></p>
+    <p id="view5"></p> -->
+    <!-- <p>ボーナス数字：<p id="view6"></p></p>  -->
+
+    <!-- 最終回の確認用 -->
+    <div id="AAA">
+        <p class="BBB">【当選番号および当選結果のご案内】</p>
+    </div>
+
+<footer class="Foot">
+    <p>copyrights 2025 Game Academy Tokyo All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/kuji.js"></script>
+
+</body>
+
+
+</html>
+
