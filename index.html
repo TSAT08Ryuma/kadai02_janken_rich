@@ -31,12 +31,12 @@
     </div>
     <div class="input1">
         <p>くじ数字入力ゾーン</p>
-        <input type="number" name="" id="num0" min="1" max="43" value="1">
-        <input type="number" name="" id="num1" min="1" max="43" value="2">
-        <input type="number" name="" id="num2" min="1" max="43" value="3">
-        <input type="number" name="" id="num3" min="1" max="43" value="4">
-        <input type="number" name="" id="num4" min="1" max="43" value="5">
-        <input type="number" name="" id="num5" min="1" max="43" value="6">
+        <input type="number" name="" id="num0" min="1" max="43" oninput="limit()" value="1">
+        <input type="number" name="" id="num1" min="1" max="43" oninput="limit()" value="2">
+        <input type="number" name="" id="num2" min="1" max="43" oninput="limit()" value="3">
+        <input type="number" name="" id="num3" min="1" max="43" oninput="limit()" value="4">
+        <input type="number" name="" id="num4" min="1" max="43" oninput="limit()" value="5">
+        <input type="number" name="" id="num5" min="1" max="43" oninput="limit()" value="6">
         <p>くじ引きの回数 1-10000回</p>
         <input type="number" name="" value="100" id="num6" min="1" max="100">
         <p>掛け金と当選額 1-10000倍</p>

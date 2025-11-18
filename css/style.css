@@ -51,10 +51,21 @@ body{
     padding: 20px 0 35px 20px;
     font-size: 18px;
     box-sizing: border-box;
-
 }
 input{
     text-align: right;
+}
+#button0{
+    text-shadow: rgba(255, 175, 70, 0.5);
+    background-color: #ffd76a;
+    border-radius: 10px;
+
+}
+#button1{
+    text-shadow: rgba(58, 41, 18, 0.5);
+    background-color: #8593cb;
+    border-radius: 10px;
+
 }
 .kekka3{
     text-align: center;
@@ -96,7 +107,7 @@ input{
 }
 .Foot {
     width: 100%;
-    color: black;
+    color: white;
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 12px;
