@@ -31,15 +31,6 @@ function getValue0(){
     const t5 = Number(document.getElementById("num5").value);
     array01 = [t0, t1, t2, t3, t4, t5];
     array01.sort((a,b) => a-b);
-
-// くじ入力番号を確認
-    // document.getElementById("self0").textContent = array01[0];
-    // document.getElementById("self1").textContent = array01[1];
-    // document.getElementById("self2").textContent = array01[2];
-    // document.getElementById("self3").textContent = array01[3];
-    // document.getElementById("self4").textContent = array01[4];
-    // document.getElementById("self5").textContent = array01[5];
-    // console.dir(array01);
 }
 
 //シャッフルアルゴリズム くじ結果
@@ -68,15 +59,6 @@ function shuffle_check(){
         });
 
         array03 = arr.slice(6,7);
-        // array03 = [6];
-        // 当選番号を確認
-        // document.getElementById("view0").textContent = array02[0];
-        // document.getElementById("view1").textContent = array02[1];
-        // document.getElementById("view2").textContent = array02[2];
-        // document.getElementById("view3").textContent = array02[3];
-        // document.getElementById("view4").textContent = array02[4];
-        // document.getElementById("view5").textContent = array02[5];
-        // document.getElementById("view6").textContent = array03[0];
 
         // 当選番号を保存
         for (let p = 0; p < 6 ; p++){
@@ -153,7 +135,8 @@ function shuffle_check(){
                     beginAtZero: true
                 },
                 y: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    grid: { color: 'rgba(255,255,255,0.15)' },
                 }
             }
         }
@@ -185,3 +168,4 @@ function shuffle_check(){
     wrapper.innerHTML = '<p>【当選番号および当選結果】</p>';
     Line.destroy()
     };
+
