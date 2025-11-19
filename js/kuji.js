@@ -176,6 +176,8 @@ function shuffle_check(){
         let inputnumber3 = Number(document.getElementById("num3").value);
         let inputnumber4 = Number(document.getElementById("num4").value);
         let inputnumber5 = Number(document.getElementById("num5").value);
+        let inputnumber6 = Number(document.getElementById("num6").value);
+        let inputnumber7 = Number(document.getElementById("num7").value);
         if(inputnumber0 < 0 || inputnumber0 > 43 || !Number.isInteger(inputnumber0)){
             document.getElementById("num0").value = 1 
         }
@@ -194,4 +196,25 @@ function shuffle_check(){
         if(inputnumber5 < 0 || inputnumber5 > 43 || !Number.isInteger(inputnumber5)){
             document.getElementById("num5").value = 6 
         }
+        if(inputnumber6 < 0 || inputnumber6 > 10000 || !Number.isInteger(inputnumber6)){
+            document.getElementById("num6").value = 100
+        }
+        if(inputnumber7 < 0 || inputnumber7 > 10000 || !Number.isInteger(inputnumber7)){
+            document.getElementById("num7").value = 10000
+        }
     }
+
+    // 射幸心をあおる
+        function movie(){
+                const movie = document.getElementById("movie")
+                const movie2 = document.getElementById("movie2")
+                movie2.currentTime = 0;
+                movie.style.opacity = "1";
+                movie.style.pointerEvents = "auto";
+                setTimeout(function(){
+                    movie.style.opacity = "0";
+                    movie.style.pointerEvents = "none";
+                    movie2.currentTime = 0;
+                },5000);
+                movie2.currentTime = 0;
+            }
