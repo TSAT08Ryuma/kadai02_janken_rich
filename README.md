@@ -1,5 +1,5 @@
 # ①課題名
-６つの数字を当てるだけのゲーム
+６つの数字を当てるだけのゲーム(動画演出追加)
 
 <div><img width="558" height="324" alt="image" src="https://github.com/user-attachments/assets/4bb49f63-1df4-4359-be0b-0f12e3e26e38" /></div>
 
@@ -25,6 +25,7 @@ https://tsat08ryuma.github.io/kadai02_janken_rich/
 
 ## ⑦フリー項目（感想、シェアしたいこと等なんでも）
 - [感想]リターンの確率分布や分散について考えるのが好きなので、作っていて楽しかったです。
+
 
 
 
