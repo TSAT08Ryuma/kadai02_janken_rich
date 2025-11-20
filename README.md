@@ -1,5 +1,6 @@
 # ①課題名
 ６つの数字を当てるだけのゲーム
+<img width="558" height="324" alt="image" src="https://github.com/user-attachments/assets/4bb49f63-1df4-4359-be0b-0f12e3e26e38" />
 
 ## ②課題内容（どんな作品か）
 - ６つの数字を入力してボタンを押すと運が試せます。
@@ -23,5 +24,6 @@ https://tsat08ryuma.github.io/kadai02_janken_rich/
 
 ## ⑦フリー項目（感想、シェアしたいこと等なんでも）
 - [感想]リターンの確率分布や分散について考えるのが好きなので、作っていて楽しかったです。
+
 
 
