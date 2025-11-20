@@ -208,13 +208,23 @@ function shuffle_check(){
         function movie(){
                 const movie = document.getElementById("movie")
                 const movie2 = document.getElementById("movie2")
+                const movieback = document.getElementById("all")
+
+                // 確実に止める
+                movie2.pause();
                 movie2.currentTime = 0;
+                movie2.load();
+
                 movie.style.opacity = "1";
+                movieback.style.opacity = "1";
+                movieback.style.zIndex="99998";
                 movie.style.pointerEvents = "auto";
                 setTimeout(function(){
                     movie.style.opacity = "0";
+                    movieback.style.opacity = "0";
                     movie.style.pointerEvents = "none";
+                    movieback.style.zIndex="-1";
+                    movie2.pause();
                     movie2.currentTime = 0;
                 },5000);
-                movie2.currentTime = 0;
-            }
+        }
